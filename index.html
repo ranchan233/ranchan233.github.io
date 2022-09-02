@@ -374,7 +374,7 @@ class="math inline">\(y=k^nx\)</span>带入式子，n由式子中x和y的次数�
 <h3 id="偏导数">偏导数</h3>
 <p>多元函数<span
 class="math inline">\(f(x,y)\)</span>随着其中某个自变量变化而对应的变化率，记作<span
-class="math inline">\(\frac {\partial f}{\partial x}\frac {\partial
+class="math inline">\(\frac {\partial f}{\partial x},\frac {\partial
 f}{\partial y}\)</span></p>
 <h3 id="全微分">全微分</h3>
 <p><span class="math inline">\(dz=\frac {\partial z}{\partial x}dx+\frac
@@ -402,11 +402,115 @@ class="math inline">\(\left\{\begin{array}{}\Longrightarrow偏导\frac
 y}存在\\\Longrightarrow函数f(x,y)连续\end{array}\right.\)</span></p>
 <h2 id="几何应用">几何应用</h2>
 <h3 id="曲面切平面">曲面切平面</h3>
+<p><span class="math display">\[
+F_x(x_0,y_0,z_0)(x-x_0)+F_y(x_0,y_0,z_0)(y-y_0)+F_z(x_0,y_0,z_0)(z-z_0)=0
+\]</span></p>
 <h3 id="曲面的法线">曲面的法线</h3>
+<p><span class="math display">\[
+\frac{x-x_0}{F_x(x_0,y_0,z_0)}=\frac{y-y_0}{F_y(x_0,y_0,z_0)}=\frac{z-z_0}{F_z(x_0,y_0,z_0)}
+\]</span></p>
 <h3 id="曲线切线">曲线切线</h3>
+<p><span class="math display">\[
+\frac{x-x_0}{x&#39;(t_0)}=\frac{y-y_0}{y&#39;(t_0)}=\frac{z-z_0}{z&#39;(t_0)}
+\]</span></p>
 <h3 id="曲线法平面">曲线法平面</h3>
+<p><span class="math display">\[
+x&#39;(t_0)(x-x_0)+y&#39;(t_0)(y-y_0)+z&#39;(t_0)(z-z_0)=0
+\]</span></p>
 <h2 id="多元函数复合求导">多元函数复合求导</h2>
+<p><strong>例：</strong><span
+class="math inline">\(z=f(u,v)，u,v是关于x,y的函数，则\frac{\partial
+z}{\partial x}=\frac{\partial z}{\partial u}\frac{\partial u}{\partial
+x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial
+x}，z对v求偏导同理\)</span></p>
+<h2 id="多元函数的极值">多元函数的极值</h2>
+<h3 id="无条件极值">无条件极值</h3>
+<p>求<span class="math inline">\(f(x,y)\)</span>的极值，</p>
+<p>第一步，先令<span class="math inline">\(\frac {\partial f}{\partial
+x}=0,\frac {\partial f}{\partial y}=0\)</span>得到几个点；</p>
+<p>第二步，写出<span
+class="math inline">\(A=f^&quot;_{xx},B=f^&quot;_{xy},C=f^&quot;_{yy}\)</span>的公式;</p>
+<p>第三步，对于第一步的每一个点，分别带入第二步中<span
+class="math inline">\(A,B,C\)</span>的公式，算出具体的<span
+class="math inline">\(A,B,C\)</span>的值，然后判断<span
+class="math inline">\(AC-B^2\)</span>与0的关系，若&gt;0，则该点是极值点，若&lt;0，则不是极值点。具体是极大值还是极小值需要带入<span
+class="math inline">\(f(x,y)\)</span>中判断。</p>
+<h3 id="条件极值">条件极值</h3>
+<p><strong>拉格朗日乘数法</strong></p>
+<p>给定二元函数<span
+class="math inline">\(f(x,y)\)</span>和附加条件<span
+class="math inline">\(\varphi(x,y)=0\)</span></p>
+<p>第一步，做函数<span
+class="math inline">\(F(x,y,\lambda)=f(x,y)+\lambda\varphi(x,y)\)</span>；</p>
+<p>第二步，令<span
+class="math inline">\(\left\{\begin{array}{}F&#39;_x=0\\F&#39;_y=0\\F&#39;_\lambda=0\end{array}\right.\)</span>，三个方程三个未知数，解出可能极值点；</p>
+<p>第三步，带入具体问题，判断出哪个是需要的极值点。</p>
 <h1 id="重积分">重积分</h1>
+<h2 id="二重积分">二重积分</h2>
+<p><strong>二重积分是二维问题</strong></p>
+<h3 id="直角坐标的二重积分">直角坐标的二重积分</h3>
+<p>对<span
+class="math inline">\(z=f(x,y),在D上积分(积分区域D通常会用几个式子表示)\)</span></p>
+<p>第一步，根据题目要求，画出积分区域(投影)；</p>
+<p>第二步，切割(切横条/竖条)，本质上是决定先对 x 积分，还是先对 y
+积分，下面以横切为例(先对x积分），写出左端点右端点的横坐标的表达式<span
+class="math inline">\(x_1(y),x_2(y)\)</span>，然后找出最下方和最上方的点的纵坐标<span
+class="math inline">\(a,b\)</span>；</p>
+<p>第三步，写出二重积分，<span
+class="math inline">\(\iint_Df(x,y)d\sigma=\int_a^bdy\int_{x_1(y)}^{x_2(y)}f(x,y)dx\)</span>；</p>
+<p>第四步，算积分，先对x积分，把y看成常数，再对y积分。</p>
+<p>竖切(先对y积分)同理。</p>
+<p>关于横切还是竖切，具体题目具体分析，选择更简单的一方。</p>
+<h3 id="极坐标的二重积分">极坐标的二重积分</h3>
+<p>若横切竖切都不好做，比如被积函数很难求原函数，则引入极坐标。</p>
+<p>第一步，换元<span
+class="math inline">\(\left\{\begin{array}{}x=\rho\cos\theta\\y=\rho\sin\theta\end{array}\right.，则dxdy=\rho
+d\rho d\theta\)</span></p>
+<p>第二步，同直角坐标的二重积分。</p>
+<p>关于<span class="math inline">\(\rho\)</span>和<span
+class="math inline">\(\theta\)</span>的上下限，可以先写出 x 和 y
+的表达式，再换元。</p>
+<h3 id="奇函数与偶函数">奇函数与偶函数</h3>
+<p>若<span
+class="math inline">\(f(x,-y)=-f(x,y)\)</span>，则关于y轴对称的积分区域抵消；</p>
+<p>若<span
+class="math inline">\(f(-x,y)=-f(x,y)\)</span>，则关于x轴对称的积分区域抵消。</p>
+<p>偶函数同理，只不过不是抵消，而是相等。</p>
+<p>还请灵活运用把。</p>
+<h3 id="特殊的积分区域">特殊的积分区域</h3>
+<p>若调换<span class="math inline">\(x\)</span>和<span
+class="math inline">\(y\)</span>，积分区域不变，即积分区域关于 <span
+class="math inline">\(y=x\)</span> 对称，则可以对调<span
+class="math inline">\(x\)</span>和<span
+class="math inline">\(y\)</span>，这时积分值是不变的，令<span
+class="math inline">\(I\)</span>等于这个值。</p>
+<p>这时，<span class="math inline">\(2I=\iint f(x,y)d\sigma+\iint
+f(y,x)d\sigma=\iint [f(x,y)+f(y,x)]d\sigma\)</span></p>
+<p>为什么要这么做，因为有时<span
+class="math inline">\(f(x,y)+f(y,x)\)</span>是很好算的。</p>
+<h2 id="三重积分">三重积分</h2>
+<h3 id="直角坐标的三重积分">直角坐标的三重积分</h3>
+<p>三重积分<span class="math inline">\(\iiint_\Omega
+f(x,y,z)dxdydz\)</span>；</p>
+<p>计算三重积分，其实思路与二重积分一致，也是先对其中一个变量积分，然后对其他变量积分，但是有一点不同，因为三重积分的积分区域是三维的，所以图可能画不出来，这时，我们就要用以下方法。</p>
+<p>第一步，根据题中所给积分区域的式子，找出关于<span
+class="math inline">\(x,y\)</span>的方程，其中的 <span
+class="math inline">\(z\)</span>
+用联立的方法消掉，这时我们就得到了一系列关于<span
+class="math inline">\(x,y\)</span>的式子，根据这些式子确定积分区域在<span
+class="math inline">\(xoy\)</span>平面上的投影；</p>
+<p>第二步，根据题中所给积分区域的式子，找出关于 <span
+class="math inline">\(z\)</span> 的方程，以确定 <span
+class="math inline">\(z\)</span> 的上下限，<span
+class="math inline">\(x,y\)</span>的上下限运用与二重积分相同的方法找；</p>
+<p>第三步，写出三重积分<span class="math inline">\(\iiint_\Omega
+f(x,y,z)dxdydz=\int_a^bdx\int_c^ddy\int_{f_1(x,y)}^{f_2(x,y)}f(x,y,z)dz\)</span>，然后对
+<span class="math inline">\(z\)</span> 积分，就得到了关于<span
+class="math inline">\(x,y\)</span>的二重积分，再根据上面计算二重积分的方法计算就行了。</p>
+<h3 id="柱坐标的三重积分">柱坐标的三重积分</h3>
+<p>其实就是与上面极坐标的二重积分相同，把<span
+class="math inline">\(x,y\)</span>用极坐标表示，然后 <span
+class="math inline">\(z\)</span> 不变，就是柱坐标。</p>
 <h1 id="曲线积分和曲面积分">曲线积分和曲面积分</h1>
 <h1 id="无穷级数">无穷级数</h1>
 <h1 id="微分方程">微分方程</h1>
