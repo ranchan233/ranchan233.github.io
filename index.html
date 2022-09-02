@@ -322,7 +322,7 @@ b\)</span>垂直方向上的分量：<span class="math inline">\(\vec a-{\vec a
 一般方程：Ax+By+Cz+D=0\\
 截距式：\frac xa+\frac yb+\frac zc=1\\
 平面间夹角：cos\theta=\frac
-{A_1A_2+B_1B_2+C_1C_2}{\sqrt[]{A_1^2+B_1^2+C_1^2}+\sqrt[]{A_2^2+B_2^2+C_2^2}}\\
+{|A_1A_2+B_1B_2+C_1C_2|}{\sqrt[]{A_1^2+B_1^2+C_1^2}\cdot\sqrt[]{A_2^2+B_2^2+C_2^2}}\\
 点到平面间的距离：d=\frac {Ax_0+By_0+Cz_0+D}{\sqrt[]{A^2+B^2+C^2}}
 \]</span></p>
 <h3 id="空间直线的公式">空间直线的公式</h3>
@@ -512,6 +512,42 @@ class="math inline">\(x,y\)</span>的二重积分，再根据上面计算二重�
 class="math inline">\(x,y\)</span>用极坐标表示，然后 <span
 class="math inline">\(z\)</span> 不变，就是柱坐标。</p>
 <h1 id="曲线积分和曲面积分">曲线积分和曲面积分</h1>
+<h2 id="曲线积分">曲线积分</h2>
+<h3
+id="对弧长的曲线积分第一类曲线积分">对弧长的曲线积分(第一类曲线积分)</h3>
+<p><span class="math inline">\(\int _L \rho ds\)</span></p>
+<p>第一步，画出所积曲线，转化为定积分 <span class="math display">\[
+ds=\sqrt {1+(\frac {dy}{dx})^2}dx=\sqrt {1+(\frac {dx}{dy})^2}dy=\sqrt
+{(\frac {dx}{dt})^2+(\frac {dy}{dt})^2}dt
+\]</span> 并确定积分的上下限(<span
+class="math inline">\(x\)</span>从左往右，<span
+class="math inline">\(y\)</span>从下往上)</p>
+<p>第二步，计算定积分。</p>
+<p><strong>物理意义</strong>：求一条线的质量</p>
+<h3
+id="对坐标的曲线积分第二类曲线积分">对坐标的曲线积分(第二类曲线积分)</h3>
+<p><span class="math inline">\(\int _L P(x,y)dx+Q(x,y)dy\)</span></p>
+<p>根据曲线的方程把全部的 <span class="math inline">\(y\)</span> 换为
+<span class="math inline">\(x\)</span>，再积分即可</p>
+<p><strong>物理意义</strong>：求沿着某条路径的某个力的做功，所以对坐标的曲线积分的路径是有方向的</p>
+<h2 id="格林公式">格林公式</h2>
+<h3 id="格林公式-1">格林公式</h3>
+<p><span class="math display">\[
+\oint_L Pdx+Qdy=\iint_D(\frac{\partial Q}{\partial x}-\frac{\partial
+P}{\partial y})dxdy
+\]</span></p>
+<p>其中，<span
+class="math inline">\(L\)</span>是正向封闭曲线(逆时针)。</p>
+<h3 id="路径无关性">路径无关性</h3>
+<p>格林公式告诉我们，我们可以把一个封闭的曲线积分转化成一个二重积分。</p>
+<p>但是对于一个非封闭的第二类曲线积分<span class="math inline">\(\int_L
+Pdx+Qdy\)</span>，当<span class="math inline">\(\frac{\partial
+Q}{\partial x}-\frac{\partial P}{\partial
+y}=0\)</span>时，它的值是与路径无关的，此时我们可以选择一个更简单的路径<span
+class="math inline">\(L&#39;\)</span>，来方便我们计算这个积分。</p>
+<h2 id="曲面积分">曲面积分</h2>
+<h3
+id="对面积的曲面积分第一类曲面积分">对面积的曲面积分(第一类曲面积分)</h3>
 <h1 id="无穷级数">无穷级数</h1>
 <h1 id="微分方程">微分方程</h1>
 
