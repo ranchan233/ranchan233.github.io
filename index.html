@@ -576,6 +576,50 @@ x}+\frac {\partial Q}{\partial y}+\frac {\partial R}{\partial z})
 {\partial P}{\partial x}+\frac {\partial Q}{\partial y}+\frac {\partial
 R}{\partial z}\)</span></p>
 <h1 id="无穷级数">无穷级数</h1>
+<p><span class="math display">\[
+x\to\infty时，lnx\ll x\ll x^2\ll2^x\ll3^x\ll x!\ll x^x\\
+\frac{1}{lnx}\gg\frac{1}{x}\gg\frac{1}{x^2}\gg\frac{1}{2^x}\gg\frac{1}{3^x}\gg\frac{1}{x!}\gg\frac{1}{x^x}
+\]</span></p>
+<h2 id="正项级数">正项级数</h2>
+<h3 id="三个典型的级数">三个典型的级数</h3>
+<h4 id="调和级数">调和级数</h4>
+<p><span class="math display">\[
+1+\frac 12+\frac 13+\cdots+\frac 1n+\cdots
+\]</span></p>
+<p>该级数发散</p>
+<h4 id="p级数">p级数</h4>
+<p><span class="math display">\[
+1+\frac {1}{2^p}+\frac {1}{3^p}+\cdots+\frac {1}{n^p}+\cdots
+\]</span></p>
+<p><span class="math inline">\(p&gt;1\)</span>时，收敛。</p>
+<p><span class="math inline">\(p\leq1\)</span>时，发散。</p>
+<h4 id="等比级数">等比级数</h4>
+<p>高中时学的，这里不多解释。</p>
+<p><span class="math inline">\(|q|&lt;1\)</span>时，收敛。</p>
+<h3 id="判别级数敛散性">判别级数敛散性</h3>
+<h4 id="极限审敛法">极限审敛法</h4>
+<p><span class="math display">\[
+\lim\limits_{n\to \infty}n^pU_n=l(0\leq l&lt;+\infty),p&gt;1
+\]</span></p>
+<p>则<span class="math inline">\(U_n\)</span>收敛</p>
+<h4 id="比值审敛法">比值审敛法</h4>
+<p><span class="math display">\[
+\lim\limits_{n\to \infty}\frac{U_{n+1}}{U_n}&lt;1
+\]</span></p>
+<p>则<span class="math inline">\(Un\)</span>收敛</p>
+<h4 id="比较审敛法">比较审敛法</h4>
+<p>与上面的三个级数做对比，进行放缩。</p>
+<h2 id="交错级数">交错级数</h2>
+<p>若</p>
+<p>1、<span class="math inline">\(|U_n|\to0\)</span></p>
+<p>2、<span class="math inline">\(|U_{n+1}|\leq|U_n|\)</span></p>
+<p>则交错级数收敛</p>
+<p><strong>交错级数必须一正一负</strong>，对于两正两负，需要交换其中的两项。</p>
+<h3 id="绝对收敛or条件收敛">绝对收敛or条件收敛</h3>
+<p><strong>绝对收敛</strong>：若级数各项取绝对值，级数<span
+class="math inline">\(\sum\limits^\infty_{n=1}|U_n|\)</span>收敛，则称该级数绝对收敛；</p>
+<p><strong>条件收敛</strong>：如果该级数不满足绝对收敛，而且该级数收敛，则称该级数条件收敛。</p>
+<h2 id="幂级数">幂级数</h2>
 <h1 id="微分方程">微分方程</h1>
 
       
