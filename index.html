@@ -530,15 +530,15 @@ id="对坐标的曲线积分第二类曲线积分">对坐标的曲线积分(第�
 <p>根据曲线的方程把全部的 <span class="math inline">\(y\)</span> 换为
 <span class="math inline">\(x\)</span>，再积分即可</p>
 <p><strong>物理意义</strong>：求沿着某条路径的某个力的做功，所以对坐标的曲线积分的路径是有方向的</p>
-<h2 id="格林公式">格林公式</h2>
-<h3 id="格林公式-1">格林公式</h3>
+<h3 id="格林公式">格林公式</h3>
+<h4 id="格林公式-1">格林公式</h4>
 <p><span class="math display">\[
 \oint_L Pdx+Qdy=\iint_D(\frac{\partial Q}{\partial x}-\frac{\partial
 P}{\partial y})dxdy
 \]</span></p>
 <p>其中，<span
 class="math inline">\(L\)</span>是正向封闭曲线(逆时针)。</p>
-<h3 id="路径无关性">路径无关性</h3>
+<h4 id="路径无关性">路径无关性</h4>
 <p>格林公式告诉我们，我们可以把一个封闭的曲线积分转化成一个二重积分。</p>
 <p>但是对于一个非封闭的第二类曲线积分<span class="math inline">\(\int_L
 Pdx+Qdy\)</span>，当<span class="math inline">\(\frac{\partial
@@ -558,6 +558,23 @@ class="math inline">\(z\)</span>替换为<span
 class="math inline">\(x,y\)</span>的表达式；</p>
 <p>第三步，将<span class="math inline">\(dS\)</span>转化为<span
 class="math inline">\(\sqrt{1+z^2_x+z^2_y}dxdy\)</span></p>
+<p><strong>物理意义</strong>：求一个面的质量</p>
+<h3
+id="对坐标的曲面积分第二类曲面积分">对坐标的曲面积分(第二类曲面积分)</h3>
+<p><strong>物理意义</strong>：通过某个界面的流量(有方向) <span
+class="math display">\[
+\iint_\Sigma v_xdydz+\iint_\Sigma v_ydxdz+\iint_\Sigma v_zdxdy
+\]</span> 第一步，根据题目式子，确定投影区域；</p>
+<p>第二步，根据曲面指定方向，确定正负号；</p>
+<p>第三步，计算二重积分。</p>
+<h3 id="高斯公式">高斯公式</h3>
+<p><span class="math display">\[
+\oiint_\Sigma Pdydz+Qdxdz+Rdxdy=\iiint(\frac {\partial P}{\partial
+x}+\frac {\partial Q}{\partial y}+\frac {\partial R}{\partial z})
+\]</span></p>
+<p>散度：<span class="math inline">\(\nabla \cdot (P,Q,R)=\frac
+{\partial P}{\partial x}+\frac {\partial Q}{\partial y}+\frac {\partial
+R}{\partial z}\)</span></p>
 <h1 id="无穷级数">无穷级数</h1>
 <h1 id="微分方程">微分方程</h1>
 
