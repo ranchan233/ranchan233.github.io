@@ -647,6 +647,33 @@ ln(1+x)=x-\frac12x^2+\frac13x^3+\cdots+(-1)^{n+1}\frac1nx^n(-1&lt;x\leq
 <h3 id="和函数">和函数</h3>
 <p><strong>求幂级数的和函数，就是逆向利用泰勒级数</strong></p>
 <h1 id="微分方程">微分方程</h1>
+<h2 id="一阶微分方程">一阶微分方程</h2>
+<h3 id="分离变量法">分离变量法</h3>
+<p>将<span
+class="math inline">\(x,y\)</span>分离到等号两侧，两侧分别进行积分。</p>
+<h3 id="齐次方程变量替换法">齐次方程变量替换法</h3>
+<p><strong>题目特征</strong>：无法直接分离变量，但是方程中每一项变量次数相同。</p>
+<p>设<span class="math inline">\(u=\frac yx,\)</span>将<span
+class="math inline">\(y=ux,dy=udx+xdu\)</span>带入方程中，再分离变量求解。</p>
+<h3 id="线性微分方程">线性微分方程</h3>
+<p>形如<span
+class="math inline">\(\frac{dy}{dx}+P(x)y=Q(x)\)</span>的方程，均为一阶线性微分方程，如果<span
+class="math inline">\(Q(x)=0\)</span>则为齐次线性方程，反之就是非齐次方程</p>
+<h4 id="齐次线性方程">齐次线性方程</h4>
+<p>直接分离变量即可</p>
+<h4 id="非齐次方程">非齐次方程</h4>
+<h5 id="公式法">公式法</h5>
+<p><span
+class="math inline">\(\frac{dy}{dx}+P(x)y=Q(x)\)</span>解为：<span
+class="math inline">\(y=e^{\int P(x)dx}[\int Q(x)e^{\int
+P(x)dx}dx+C]\)</span></p>
+<h5 id="常数变易法">常数变易法</h5>
+<p>第一步，将<span
+class="math inline">\(Q(x)\)</span>看作0，得到齐次方程的解；</p>
+<p>第二步，将常数<span class="math inline">\(C\)</span>看作<span
+class="math inline">\(C(x)\)</span>，再带回原非齐次方程，进而解出<span
+class="math inline">\(C(x)\)</span></p>
+<h2 id="二阶微分方程">二阶微分方程</h2>
 
       
     </div>
